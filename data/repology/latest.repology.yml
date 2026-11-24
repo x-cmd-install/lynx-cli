@@ -1,42 +1,24 @@
-- repo: adelie_current
-  subrepo: user
-  srcname: lynx
+- repo: scoop
+  subrepo: main
   binname: lynx
   visiblename: lynx
-  version: 2.9.2
-  origversion: 2.9.2-r0
-  status: outdated
-  summary: Cross-platform text-based browser
-  maintainers:
-    - sheila@vulpine.house
+  version: 2.9.3
+  origversion: null
+  status: newest
   licenses:
     - GPL-2.0-only
-- repo: adelie_current
-  subrepo: user
-  srcname: lynx
-  binname: lynx-dbg
-  visiblename: lynx-dbg
-  version: 2.9.2
-  origversion: 2.9.2-r0
-  status: outdated
-  summary: Cross-platform text-based browser (debug symbols)
+- repo: aosc
+  srcname: app-web/lynx
+  binname: lynx
+  visiblename: lynx
+  version: 2.9.3
+  origversion: 1:2.9.3
+  status: newest
+  summary: Text-based browser for the World Wide Web
   maintainers:
-    - sheila@vulpine.house
-  licenses:
-    - GPL-2.0-only
-- repo: adelie_current
-  subrepo: user
-  srcname: lynx
-  binname: lynx-doc
-  visiblename: lynx-doc
-  version: 2.9.2
-  origversion: 2.9.2-r0
-  status: outdated
-  summary: Cross-platform text-based browser (documentation)
-  maintainers:
-    - sheila@vulpine.house
-  licenses:
-    - GPL-2.0-only
+    - fallback-mnt-aosc@repology
+  categories:
+    - web
 - repo: adelie_current
   subrepo: user
   srcname: lynx
@@ -71,18 +53,45 @@
     - GPLv2
   categories:
     - Applications/Internet
-- repo: aosc
-  srcname: app-web/lynx
+- repo: adelie_current
+  subrepo: user
+  srcname: lynx
+  binname: lynx-doc
+  visiblename: lynx-doc
+  version: 2.9.2
+  origversion: 2.9.2-r0
+  status: outdated
+  summary: Cross-platform text-based browser (documentation)
+  maintainers:
+    - sheila@vulpine.house
+  licenses:
+    - GPL-2.0-only
+- repo: adelie_current
+  subrepo: user
+  srcname: lynx
   binname: lynx
   visiblename: lynx
-  version: 2.9.3
-  origversion: 1:2.9.3
-  status: newest
-  summary: Text-based browser for the World Wide Web
+  version: 2.9.2
+  origversion: 2.9.2-r0
+  status: outdated
+  summary: Cross-platform text-based browser
   maintainers:
-    - fallback-mnt-aosc@repology
-  categories:
-    - web
+    - sheila@vulpine.house
+  licenses:
+    - GPL-2.0-only
+- repo: adelie_current
+  subrepo: user
+  srcname: lynx
+  binname: lynx-dbg
+  visiblename: lynx-dbg
+  version: 2.9.2
+  origversion: 2.9.2-r0
+  status: outdated
+  summary: Cross-platform text-based browser (debug symbols)
+  maintainers:
+    - sheila@vulpine.house
+  licenses:
+    - GPL-2.0-only
 - repo: alpine_3_20
   subrepo: main
   srcname: lynx
@@ -857,6 +866,18 @@
   categories:
     - Unspecified
 - repo: freebsd
+  srcname: japanese/lynx-current
+  binname: ja-lynx-current
+  visiblename: japanese/lynx-current
+  version: 2.9.0.d4
+  origversion: 2.9.0.d4_2
+  status: outdated
+  summary: Console WWW client (browser) with multi-byte encoding support (development release)
+  maintainers:
+    - cqg00620@nifty.ne.jp
+  categories:
+    - japanese
+- repo: freebsd
   srcname: www/lynx-current
   binname: lynx-current
   visiblename: www/lynx-current
@@ -880,18 +901,6 @@
     - jharris@widomaker.com
   categories:
     - www
-- repo: freebsd
-  srcname: japanese/lynx-current
-  binname: ja-lynx-current
-  visiblename: japanese/lynx-current
-  version: 2.9.0.d4
-  origversion: 2.9.0.d4_2
-  status: outdated
-  summary: Console WWW client (browser) with multi-byte encoding support (development release)
-  maintainers:
-    - cqg00620@nifty.ne.jp
-  categories:
-    - japanese
 - repo: gentoo
   srcname: www-client/lynx
   visiblename: www-client/lynx
@@ -1089,7 +1098,7 @@
   binname: lynx
   visiblename: lynx
   version: 2.9.3
-  origversion: 2.9.3-1
+  origversion: 2.9.3-2
   status: newest
   summary: A text browser for the World Wide Web
   licenses:
@@ -1205,6 +1214,15 @@
     - ports@openbsd.org
   categories:
     - www
+- repo: hpux_11_31
+  subrepo: hppa_32
+  srcname: lynx
+  binname: lynx
+  visiblename: lynx
+  version: 2.8.7
+  origversion: null
+  status: legacy
+  vulnerable: true
 - repo: pkgsrc_current
   srcname: www/lynx
   binname: lynx
@@ -1438,24 +1456,24 @@
   categories:
     - Networking/WWW
 - repo: opensuse_leap_15_5
-  subrepo: updates/backports
-  srcname: lynx
-  visiblename: lynx
-  version: 2.9.0
-  origversion: 2.9.0-bp155.2.3.1
-  status: outdated
-  summary: A Text-Based WWW Browser
-  licenses:
-    - GPL-2.0-only
-  categories:
-    - Productivity/Networking/Web/Browsers
-- repo: opensuse_leap_15_5
   subrepo: main/oss
   srcname: lynx
   visiblename: lynx
   version: 2.9.0~dev.10
   origversion: 2.9.0~dev.10-bp155.1.10
   status: legacy
+  summary: A Text-Based WWW Browser
+  licenses:
+    - GPL-2.0-only
+  categories:
+    - Productivity/Networking/Web/Browsers
+- repo: opensuse_leap_15_5
+  subrepo: updates/backports
+  srcname: lynx
+  visiblename: lynx
+  version: 2.9.0
+  origversion: 2.9.0-bp155.2.3.1
+  status: outdated
   summary: A Text-Based WWW Browser
   licenses:
     - GPL-2.0-only
@@ -1578,7 +1596,7 @@
   categories:
     - misc
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: lynx
   binnames:
     - lynx-common
@@ -1595,7 +1613,7 @@
   categories:
     - misc
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: lynx
   binnames:
     - lynx-common
@@ -1770,15 +1788,6 @@
     - GPLv2+
   categories:
     - Networking/WWW
-- repo: scoop
-  subrepo: main
-  binname: lynx
-  visiblename: lynx
-  version: 2.9.3
-  origversion: null
-  status: newest
-  licenses:
-    - GPL-2.0-only
 - repo: serenityos
   srcname: lynx
   visiblename: lynx
@@ -2094,55 +2103,53 @@
   summary: web browser, text-based
   licenses:
     - GNU General Public License, version 2.0
-- repo: amazon_2
+- repo: cygwin
   srcname: lynx
-  visiblename: lynx
-  version: 2.8.8
-  origversion: 2.8.8-0.3.dev15.amzn2
-  status: legacy
-  summary: A text-based Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: amazon_2
-  srcname: lynx
+  binname: lynx
   visiblename: lynx
   version: 2.8.9
-  origversion: 2.8.9-4.amzn2
+  origversion: 2.8.9-13
   status: outdated
   summary: A text-based Web browser
-  licenses:
-    - GPLv2
+  maintainers:
+    - corinna.vinschen@cygwin
   categories:
-    - Applications/Internet
+    - Web
   vulnerable: true
-- repo: centos_8
-  subrepo: PowerTools
+- repo: cygwin
+  srcname: lynx
+  binname: lynx-debuginfo
+  visiblename: lynx-debuginfo
+  version: 2.8.9
+  origversion: 2.8.9-13
+  status: outdated
+  summary: A text-based Web browser
+  maintainers:
+    - corinna.vinschen@cygwin
+  categories:
+    - Debug
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: powertools
   srcname: lynx
   visiblename: lynx
   version: 2.8.9
   origversion: 2.8.9-2.el8
   status: outdated
   summary: A text-based Web browser
-  maintainers:
-    - bugs@centos.org
   licenses:
     - GPLv2
   categories:
     - Applications/Internet
   vulnerable: true
-- repo: centos_stream_8
-  subrepo: PowerTools
+- repo: eurolinux_8
+  subrepo: powertools
   srcname: lynx
   visiblename: lynx
   version: 2.8.9
-  origversion: 2.8.9-2.el8
+  origversion: 2.8.9-4.el8
   status: outdated
   summary: A text-based Web browser
-  maintainers:
-    - bugs@centos.org
   licenses:
     - GPLv2
   categories:
@@ -2333,6 +2340,30 @@
   categories:
     - Applications/Internet
   vulnerable: true
+- repo: amazon_2
+  srcname: lynx
+  visiblename: lynx
+  version: 2.8.8
+  origversion: 2.8.8-0.3.dev15.amzn2
+  status: legacy
+  summary: A text-based Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: amazon_2
+  srcname: lynx
+  visiblename: lynx
+  version: 2.8.9
+  origversion: 2.8.9-4.amzn2
+  status: outdated
+  summary: A text-based Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
 - repo: centos_7
   subrepo: os
   srcname: lynx
@@ -2341,6 +2372,36 @@
   origversion: 2.8.8-0.3.dev15.el7
   status: outdated
   summary: A text-based Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: centos_8
+  subrepo: PowerTools
+  srcname: lynx
+  visiblename: lynx
+  version: 2.8.9
+  origversion: 2.8.9-2.el8
+  status: outdated
+  summary: A text-based Web browser
+  maintainers:
+    - bugs@centos.org
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: centos_stream_8
+  subrepo: PowerTools
+  srcname: lynx
+  visiblename: lynx
+  version: 2.8.9
+  origversion: 2.8.9-2.el8
+  status: outdated
+  summary: A text-based Web browser
+  maintainers:
+    - bugs@centos.org
   licenses:
     - GPLv2
   categories:
@@ -2436,58 +2497,6 @@
     - GPLv2
   categories:
     - Unspecified
-  vulnerable: true
-- repo: cygwin
-  srcname: lynx
-  binname: lynx
-  visiblename: lynx
-  version: 2.8.9
-  origversion: 2.8.9-13
-  status: outdated
-  summary: A text-based Web browser
-  maintainers:
-    - corinna.vinschen@cygwin
-  categories:
-    - Web
-  vulnerable: true
-- repo: cygwin
-  srcname: lynx
-  binname: lynx-debuginfo
-  visiblename: lynx-debuginfo
-  version: 2.8.9
-  origversion: 2.8.9-13
-  status: outdated
-  summary: A text-based Web browser
-  maintainers:
-    - corinna.vinschen@cygwin
-  categories:
-    - Debug
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: powertools
-  srcname: lynx
-  visiblename: lynx
-  version: 2.8.9
-  origversion: 2.8.9-2.el8
-  status: outdated
-  summary: A text-based Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: powertools
-  srcname: lynx
-  visiblename: lynx
-  version: 2.8.9
-  origversion: 2.8.9-4.el8
-  status: outdated
-  summary: A text-based Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
   vulnerable: true
 - repo: eurolinux_9
   subrepo: appstream
@@ -2586,15 +2595,6 @@
     - cqg00620@nifty.ne.jp
   categories:
     - japanese
-  vulnerable: true
-- repo: hpux_11_31
-  subrepo: hppa_32
-  srcname: lynx
-  binname: lynx
-  visiblename: lynx
-  version: 2.8.7
-  origversion: null
-  status: legacy
   vulnerable: true
 - repo: hpux_11_31
   subrepo: hppa_32
